@@ -23,10 +23,16 @@
 ''*****************************************
 ''SCRIPT
 
-
+"Test cases for phase1
 
 
 AddUser "jsmith", "password", "John", "Smith", "ABC", "416-456-0000", "jsmith@sample.com"
 AddUser "rnmith", "password", "Nancy", "Smith", "ABC", "416-456-0000", "jsmith@sample.com"
+
+'' Invalid input 
+AddUser "", "password", "Ron", "Smith", "ABC", "416-456-0000","rsmith@sample.com"
+
+'' Invalid input missing password
+AddUser "rsmith", "", "Ron", "Smith", "ABC", "416-456-0000", "rsmith@sample.com"
 
 
